@@ -154,7 +154,7 @@ if (window.GAET) {
       } else {
         console.log('GAET: Google analytics.js (ga) not loaded. Aborting');
       }
-      if (!!_gaq) {
+      if (typeof _gaq !== "undefined") {
         console.log('GAET: Old Google analytics (_gaq) loaded. Please use only new ga');
       }
     });
